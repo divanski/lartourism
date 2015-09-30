@@ -1,408 +1,284 @@
-@extends('app')
+@extends('app2')
 
 @section('content')
-
-
-
-<section id="features" class="container services">
-    <div class="row">
-        <div class="col-sm-3">
-            <h2>Full responsive</h2>
-            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus.</p>
-            <p><a class="navy-link" href="#" role="button">Details &raquo;</a></p>
-        </div>
-        <div class="col-sm-3">
-            <h2>LESS/SASS Files</h2>
-            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus.</p>
-            <p><a class="navy-link" href="#" role="button">Details &raquo;</a></p>
-        </div>
-        <div class="col-sm-3">
-            <h2>6 Charts Library</h2>
-            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus.</p>
-            <p><a class="navy-link" href="#" role="button">Details &raquo;</a></p>
-        </div>
-        <div class="col-sm-3">
-            <h2>Advanced Forms</h2>
-            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus.</p>
-            <p><a class="navy-link" href="#" role="button">Details &raquo;</a></p>
-        </div>
-    </div>
-</section>
-
-<section  class="container features">
-    <div class="row">
-        <div class="col-lg-12 text-center">
-            <div class="navy-line"></div>
-            <h1>Over 40+ unique view<br/> <span class="navy"> with many custom components</span> </h1>
-            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. </p>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-3 text-center">
-            <div>
-                <i class="fa fa-mobile features-icon"></i>
-                <h2>Full responsive</h2>
-                <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus.</p>
-            </div>
-            <div class="m-t-lg">
-                <i class="fa fa-bar-chart features-icon"></i>
-                <h2>6 Charts Library</h2>
-                <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus.</p>
+<!--=== Purchase Block ===-->
+    <div class="purchase">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9 animated fadeInLeft">
+                    <span>Unify is a clean and fully responsive incredible Template.</span>
+                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi  vehicula sem ut volutpat. Ut non libero magna fusce condimentum eleifend enim a feugiat corrupti quos.</p>
+                </div>
+                <div class="col-md-3 btn-buy animated fadeInRight">
+                    <a href="#" class="btn-u btn-u-lg"><i class="fa fa-cloud-download"></i> Download Now</a>
+                </div>
             </div>
         </div>
-        <div class="col-md-6 text-center">
-            <img src="img/perspective.png" alt="dashboard" class="img-responsive">
-        </div>
-        <div class="col-md-3 text-center">
-            <div>
-                <i class="fa fa-envelope features-icon"></i>
-                <h2>Mail pages</h2>
-                <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus.</p>
-            </div>
-            <div class="m-t-lg">
-                <i class="fa fa-google features-icon"></i>
-                <h2>AngularJS version</h2>
-                <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus.</p>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-lg-12 text-center">
-            <div class="navy-line"></div>
-            <h1>Discover great feautres</h1>
-            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. </p>
-        </div>
-    </div>
-    <div class="row features-block">
-        <div class="col-lg-6 features-text">
-            <small>INSPINIA</small>
-            <h2>Perfectly designed </h2>
-            <p>INSPINIA Admin Theme is a premium admin dashboard template with flat design concept. It is fully responsive admin dashboard template built with Bootstrap 3+ Framework, HTML5 and CSS3, Media query. It has a huge collection of reusable UI components and integrated with latest jQuery plugins.</p>
-            <a href="" class="btn btn-primary">Learn more</a>
-        </div>
-        <div class="col-lg-6 text-right">
-            <img src="img/dashboard.png" alt="dashboard" class="img-responsive pull-right">
-        </div>
-    </div>
-</section>
+    </div><!--/row-->
+    <!-- End Purchase Block -->
 
-<section id="team" class="gray-section team">
-    <div class="container">
-        <div class="row m-b-lg">
-            <div class="col-lg-12 text-center">
-                <div class="navy-line"></div>
-                <h1>Our Team</h1>
-                <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.</p>
-            </div>
-        </div>
+    <!--=== Content Part ===-->
+    <div class="container content">
         <div class="row">
-            <div class="col-sm-4">
-                <div class="team-member">
-                    <img src="img/avatar3.jpg" class="img-responsive img-circle img-small" alt="">
-                    <h4><span class="navy">Amelia</span> Smith</h4>
-                    <p>Lorem ipsum dolor sit amet, illum fastidii dissentias quo ne. Sea ne sint animal iisque, nam an soluta sensibus. </p>
-                    <ul class="list-inline social-icon">
-                        <li><a href="#"><i class="fa fa-twitter"></i></a>
-                        </li>
-                        <li><a href="#"><i class="fa fa-facebook"></i></a>
-                        </li>
-                        <li><a href="#"><i class="fa fa-linkedin"></i></a>
-                        </li>
+            <div class="col-md-9">
+                <!-- Welcome Block -->
+                <div class="headline"><h2>Welcome To Unify</h2></div>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <img class="img-responsive margin-bottom-20" src="assets/img/main/img6.jpg" alt="" />
+                    </div>
+                    <div class="col-sm-8">
+                        <p>Unify is an incredibly beautiful responsive Bootstrap Template for corporate and creative professionals. It works on all major web browsers, tablets and phone.</p>
+                        <ul class="list-unstyled margin-bottom-20">
+                            <li><i class="fa fa-check color-green"></i> Donec id elit non mi porta gravida</li>
+                            <li><i class="fa fa-check color-green"></i> Corporate and Creative</li>
+                            <li><i class="fa fa-check color-green"></i> Responsive Bootstrap Template</li>
+                            <li><i class="fa fa-check color-green"></i> Corporate and Creative</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <blockquote class="hero-unify margin-bottom-30">
+                    <p>Award winning digital agency. We bring a personal and effective approach to every project we work on, which is why. Unify is an incredibly beautiful responsive Bootstrap Template for corporate professionals.</p>
+                    <small>CEO, Jack Bour</small>
+                </blockquote>
+                <!-- End Welcome Block -->
+
+                <!-- Recent Works -->
+                <div class="owl-carousel-v1 owl-work-v1 margin-bottom-40">
+                    <div class="headline"><h2 class="pull-left">Recent Works</h2>
+                        <div class="owl-navigation">
+                            <div class="customNavigation">
+                                <a class="owl-btn prev-v2"><i class="fa fa-angle-left"></i></a>
+                                <a class="owl-btn next-v2"><i class="fa fa-angle-right"></i></a>
+                            </div>
+                        </div><!--/navigation-->
+                    </div>
+
+                    <div class="owl-recent-works-v1">
+                        <div class="item">
+                            <a href="#">
+                                <em class="overflow-hidden">
+                                    <img class="img-responsive" src="assets/img/main/img1.jpg" alt="">
+                                </em>
+                                <span>
+                                    <strong>Happy New Year</strong>
+                                    <i>Anim pariatur cliche reprehenderit</i>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#">
+                                <em class="overflow-hidden">
+                                    <img class="img-responsive" src="assets/img/main/img2.jpg" alt="">
+                                </em>
+                                <span>
+                                    <strong>Award Winning Agency</strong>
+                                    <i>Responsive Bootstrap Template</i>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#">
+                                <em class="overflow-hidden">
+                                    <img class="img-responsive" src="assets/img/main/img3.jpg" alt="">
+                                </em>
+                                <span>
+                                    <strong>Wolf Moon Officia</strong>
+                                    <i>Pariatur prehe cliche reprehrit</i>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#">
+                                <em class="overflow-hidden">
+                                    <img class="img-responsive" src="assets/img/main/img4.jpg" alt="">
+                                </em>
+                                <span>
+                                    <strong>Food Truck Quinoa Nesciunt</strong>
+                                    <i>Craft labore wes anderson cred</i>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#">
+                                <em class="overflow-hidden">
+                                    <img class="img-responsive" src="assets/img/main/img5.jpg" alt="">
+                                </em>
+                                <span>
+                                    <strong>Happy New Year</strong>
+                                    <i>Anim pariatur cliche reprehenderit</i>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#">
+                                <em class="overflow-hidden">
+                                    <img class="img-responsive" src="assets/img/main/img1.jpg" alt="">
+                                </em>
+                                <span>
+                                    <strong>Happy New Year</strong>
+                                    <i>Anim pariatur cliche reprehenderit</i>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#">
+                                <em class="overflow-hidden">
+                                    <img class="img-responsive" src="assets/img/main/img2.jpg" alt="">
+                                </em>
+                                <span>
+                                    <strong>Award Winning Agency</strong>
+                                    <i>Responsive Bootstrap Template</i>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#">
+                                <em class="overflow-hidden">
+                                    <img class="img-responsive" src="assets/img/main/img3.jpg" alt="">
+                                </em>
+                                <span>
+                                    <strong>Wolf Moon Officia</strong>
+                                    <i>Pariatur prehe cliche reprehrit</i>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#">
+                                <em class="overflow-hidden">
+                                    <img class="img-responsive" src="assets/img/main/img4.jpg" alt="">
+                                </em>
+                                <span>
+                                    <strong>Food Truck Quinoa Nesciunt</strong>
+                                    <i>Craft labore wes anderson cred</i>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#">
+                                <em class="overflow-hidden">
+                                    <img class="img-responsive" src="assets/img/main/img5.jpg" alt="">
+                                </em>
+                                <span>
+                                    <strong>Happy New Year</strong>
+                                    <i>Anim pariatur cliche reprehenderit</i>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Recent Works -->
+
+                <!-- Tag Box -->
+                <div class="tag-box tag-box-v2">
+                    <p>Et harum quidem rerum facilis est et expedita distinctio lorem ipsum dolor sit amet consectetur adipiscing elit. Ut non libero consectetur adipiscing elit magna. Sed et quam lacus. Fusce condimentum eleifend enim a feugiat. Pellentesque viverra vehicula sem ut volutpat.</p>
+                </div>
+                <!-- End Tag Box -->
+
+                <div class="clerafix margin-bottom-50"></div>
+
+                <!-- Tabs v1 -->
+                <div class="tab-v1">
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
+                        <li><a data-toggle="tab" href="#profile">Profile</a></li>
+                        <li><a data-toggle="tab" href="#messages">Messages</a></li>
+                        <li><a data-toggle="tab" href="#settings">Settings</a></li>
                     </ul>
-                </div>
+                    <div class="tab-content">
+                        <div id="home" class="tab-pane fade in active">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <img src="assets/img/main/img12.jpg" class="img-responsive img-tab-space" alt="">
+                                </div>
+                                <div class="col-md-8">
+                                    <h4>Heading Sample 1</h4>
+                                    <p>Vivamus imperdiet condimentum diam, eget placerat felis consectetur id. Donec eget orci metus, ac adipiscing nunc. Pellentesque fermentum <strong>ivamus imperdiet</strong> condimentum diam, eget placerat felis consectetur id. Donec eget orci metus, ac adipiscing nunc. Pellentesque <strong>fermentum vivamus</strong> imperdiet condimentum diam, eget placerat felis consectetur id. Donec eget orci metus, ac adipiscing nunc. Pellentesque fermentum, ante ac felis consectetur id. Donec eget orci metusvivamus imperdiet.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="profile" class="tab-pane fade in">
+                            <img src="assets/img/main/img5.jpg" class="pull-left lft-img-margin img-width-200" alt="">
+                            <h4>Heading Sample 2</h4>
+                            <p>Vivamus imperdiet condimentum diam, eget placerat felis consectetur id. Donec eget orci metus, ac adipiscing nunc. Pellentesque fermentum, ante ac interdum ullamcorper. Donec eget orci metus, <strong>ac adipiscing nunc.</strong> Vivamus imperdiet condimentum diam, eget placerat felis consectetur id. Donec eget orci metus, ac adipiscing nunc. Pellentesque fermentum, ante ac interdum id. Donec eget orci metus, ac adipiscing nunc. Pellentesque fermentum, ante ac interdum ullamcorper. Donec eget orci metus, ac adipiscing nunc. Pellentesque fermentum, ante ac <strong>interdum ullamcorper.</strong></p>
+                        </div>
+                        <div id="messages" class="tab-pane fade in">
+                            <h4>Heading Sample 3</h4>
+                            <p><img src="assets/img/main/img6.jpg" class="pull-right rgt-img-margin img-width-200" alt=""> <strong>Vivamus imperdiet condimentum diam, eget placerat felis consectetur id.</strong> Donec eget orci metus, Vivamus imperdiet condimentum diam, eget placerat felis consectetur id. Donec eget orci metus, ac adipiscing nunc. Pellentesque fermentum, ante ac interdum ullamcorper. Donec eget orci metus, ac adipiscing nunc. Pellentesque fermentum, consectetur id. Donec eget orci metus, ac adipiscing nunc. <strong>Pellentesque fermentum</strong>, ante ac interdum ullamcorper. Donec eget orci metus, ac adipiscing nunc. Pellentesque fermentum, ante ac interdum ullamcorper.</p>
+                        </div>
+                        <div id="settings" class="tab-pane fade in">
+                            <h4>Heading Sample 4</h4>
+                            <p><img src="assets/img/main/img1.jpg" class="pull-right rgt-img-margin img-width-200" alt=""> Vivamus imperdiet condimentum diam, eget placerat felis consectetur id. Donec eget orci metus, Vivamus imperdiet condimentum diam, eget placerat felis consectetur id. Donec eget orci metus, ac adipiscing nunc. Pellentesque fermentum, ante ac interdum ullamcorper. Donec eget orci metus, ac adipiscing nunc. Pellentesque fermentum, consectetur id. Donec eget orci metus, ac adipiscing nunc. <strong>Pellentesque fermentum</strong>, ante ac interdum ullamcorper. Donec eget orci metus, ac adipiscing nunc. Pellentesque fermentum, ante ac interdum ullamcorper.</p>
+                        </div>
+                    </div>
+                </div><!--/tab-v1-->
+                <!-- End Tabs v1 -->
             </div>
-            <div class="col-sm-4">
-                <div class="team-member">
-                    <img src="img/avatar1.jpg" class="img-responsive img-circle" alt="">
-                    <h4><span class="navy">John</span> Novak</h4>
-                    <p>Lorem ipsum dolor sit amet, illum fastidii dissentias quo ne. Sea ne sint animal iisque, nam an soluta sensibus.</p>
-                    <ul class="list-inline social-icon">
-                        <li><a href="#"><i class="fa fa-twitter"></i></a>
-                        </li>
-                        <li><a href="#"><i class="fa fa-facebook"></i></a>
-                        </li>
-                        <li><a href="#"><i class="fa fa-linkedin"></i></a>
-                        </li>
+
+            <div class="col-md-3">
+                <!-- Photo Stream -->
+                <div class="headline"><h3>Photo Stream</h3></div>
+                <ul class="list-unstyled blog-photos margin-bottom-30">
+                    <li><a href="#"><img src="assets/img/sliders/elastislide/5.jpg" alt="" class="hover-effect"></a></li>
+                    <li><a href="#"><img src="assets/img/sliders/elastislide/6.jpg" alt="" class="hover-effect"></a></li>
+                    <li><a href="#"><img src="assets/img/sliders/elastislide/8.jpg" alt="" class="hover-effect"></a></li>
+                    <li><a href="#"><img src="assets/img/sliders/elastislide/10.jpg" alt="" class="hover-effect"></a></li>
+                    <li><a href="#"><img src="assets/img/sliders/elastislide/11.jpg" alt="" class="hover-effect"></a></li>
+                    <li><a href="#"><img src="assets/img/sliders/elastislide/1.jpg" alt="" class="hover-effect"></a></li>
+                    <li><a href="#"><img src="assets/img/sliders/elastislide/2.jpg" alt="" class="hover-effect"></a></li>
+                    <li><a href="#"><img src="assets/img/sliders/elastislide/7.jpg" alt="" class="hover-effect"></a></li>
+                </ul><!--/blog-photos-->
+                <!-- End Photo Stream -->
+
+                <!-- Choose Us -->
+                <div class="who margin-bottom-30">
+                    <div class="headline"><h3>Why Choose Us</h3></div>
+                    <p>Pellentesque fermentum, Vivamus imperdiet condimentum diam, eget placerat felis consectetur id.</p>
+                    <ul class="list-unstyled">
+                        <li><a href="#"><i class="fa fa-desktop"></i>Vivamus imperdiet condimentum</a></li>
+                        <li><a href="#"><i class="fa fa-bullhorn"></i>Anim pariatur cliche squid</a></li>
+                        <li><a href="#"><i class="fa fa-globe"></i>Eget placerat felis consectetur</a></li>
+                        <li><a href="#"><i class="fa fa-group"></i>Condimentum diam eget placerat</a></li>
                     </ul>
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="team-member">
-                    <img src="img/avatar2.jpg" class="img-responsive img-circle img-small" alt="">
-                    <h4><span class="navy">Peter</span> Johnson</h4>
-                    <p>Lorem ipsum dolor sit amet, illum fastidii dissentias quo ne. Sea ne sint animal iisque, nam an soluta sensibus.</p>
-                    <ul class="list-inline social-icon">
-                        <li><a href="#"><i class="fa fa-twitter"></i></a>
-                        </li>
-                        <li><a href="#"><i class="fa fa-facebook"></i></a>
-                        </li>
-                        <li><a href="#"><i class="fa fa-linkedin"></i></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 text-center m-t-lg m-b-lg">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
-            </div>
-        </div>
-    </div>
-</section>
+                </div><!--/who-->
+                <!-- End Choose Us -->
 
-<section class="features">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <div class="navy-line"></div>
-                <h1>Even more great feautres</h1>
-                <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. </p>
+                <!-- Latest Tweets -->
+                <div class="blog-twitter">
+                    <div class="headline"><h3>Latest Tweets</h3></div>
+                    <div class="blog-twitter-inner">
+                        <i class="icon-twitter"></i>
+                        <a href="#">@htmlstream</a>
+                        At vero seos etodela ccusamus et iusto odio dignissimos.
+                        <a href="#">http://t.co/sBav7dm</a>
+                        <span class="twitter-time">5 hours ago</span>
+                    </div>
+                    <div class="blog-twitter-inner">
+                        <i class="icon-twitter"></i>
+                        <a href="#">@htmlstream</a>
+                        At vero eos et accusamus et iusto odio dignissimos.
+                        <a href="#">http://t.co/sBav7dm</a>
+                        <span class="twitter-time">5 hours ago</span>
+                    </div>
+                    <div class="blog-twitter-inner">
+                        <i class="icon-twitter"></i>
+                        <a href="#">@htmlstream</a>
+                        At vero eos et accusamus et iusto odio dignissimos.
+                        <a href="#">http://t.co/sBav7dm</a>
+                        <span class="twitter-time">5 hours ago</span>
+                    </div>
+                    <div class="blog-twitter-inner">
+                        <i class="icon-twitter"></i>
+                        <a href="#">@htmlstream</a>
+                        At vero eos et accusamus et iusto odio dignissimos.
+                        <a href="#">http://t.co/sBav7dm</a>
+                        <span class="twitter-time">5 hours ago</span>
+                    </div>
+                </div><!--/blog-twitter-->
+                <!-- End Latest Tweets -->
             </div>
-        </div>
-        <div class="row features-block">
-            <div class="col-lg-3 features-text">
-                <small>INSPINIA</small>
-                <h2>Perfectly designed </h2>
-                <p>INSPINIA Admin Theme is a premium admin dashboard template with flat design concept. It is fully responsive admin dashboard template built with Bootstrap 3+ Framework, HTML5 and CSS3, Media query. It has a huge collection of reusable UI components and integrated with latest jQuery plugins.</p>
-                <a href="" class="btn btn-primary">Learn more</a>
-            </div>
-            <div class="col-lg-6 text-right m-t-n-lg">
-                <img src="img/iphone.jpg" class="img-responsive" alt="dashboard">
-            </div>
-            <div class="col-lg-3 features-text text-right">
-                <small>INSPINIA</small>
-                <h2>Perfectly designed </h2>
-                <p>INSPINIA Admin Theme is a premium admin dashboard template with flat design concept. It is fully responsive admin dashboard template built with Bootstrap 3+ Framework, HTML5 and CSS3, Media query. It has a huge collection of reusable UI components and integrated with latest jQuery plugins.</p>
-                <a href="" class="btn btn-primary">Learn more</a>
-            </div>
-        </div>
-    </div>
-
-</section>
-
-<section id="testimonials" class="navy-section testimonials">
-
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <i class="fa fa-comment big-icon"></i>
-                <h1>
-                    What our users say
-                </h1>
-                <div class="testimonials-text">
-                    <i>"Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)."</i>
-                </div>
-                <small>
-                    <strong>12.02.2014 - Andy Smith</strong>
-                </small>
-            </div>
-        </div>
-    </div>
-
-</section>
-<section class="features">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <div class="navy-line"></div>
-                <h1>More and more extra great feautres</h1>
-                <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. </p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-5 col-lg-offset-1 features-text">
-                <small>INSPINIA</small>
-                <h2>Perfectly designed </h2>
-                <i class="fa fa-bar-chart big-icon pull-right"></i>
-                <p>INSPINIA Admin Theme is a premium admin dashboard template with flat design concept. It is fully responsive admin dashboard template built with Bootstrap 3+ Framework, HTML5 and CSS3, Media query. It has a huge collection of reusable UI components and integrated with.</p>
-            </div>
-            <div class="col-lg-5 features-text">
-                <small>INSPINIA</small>
-                <h2>Perfectly designed </h2>
-                <i class="fa fa-bolt big-icon pull-right"></i>
-                <p>INSPINIA Admin Theme is a premium admin dashboard template with flat design concept. It is fully responsive admin dashboard template built with Bootstrap 3+ Framework, HTML5 and CSS3, Media query. It has a huge collection of reusable UI components and integrated with.</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-5 col-lg-offset-1 features-text">
-                <small>INSPINIA</small>
-                <h2>Perfectly designed </h2>
-                <i class="fa fa-clock-o big-icon pull-right"></i>
-                <p>INSPINIA Admin Theme is a premium admin dashboard template with flat design concept. It is fully responsive admin dashboard template built with Bootstrap 3+ Framework, HTML5 and CSS3, Media query. It has a huge collection of reusable UI components and integrated with.</p>
-            </div>
-            <div class="col-lg-5 features-text">
-                <small>INSPINIA</small>
-                <h2>Perfectly designed </h2>
-                <i class="fa fa-users big-icon pull-right"></i>
-                <p>INSPINIA Admin Theme is a premium admin dashboard template with flat design concept. It is fully responsive admin dashboard template built with Bootstrap 3+ Framework, HTML5 and CSS3, Media query. It has a huge collection of reusable UI components and integrated with.</p>
-            </div>
-        </div>
-    </div>
-
-</section>
-<section id="pricing" class="pricing">
-    <div class="container">
-        <div class="row m-b-lg">
-            <div class="col-lg-12 text-center">
-                <div class="navy-line"></div>
-                <h1>App Pricing</h1>
-                <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-4">
-                <ul class="pricing-plan list-unstyled">
-                    <li class="pricing-title">
-                        Basic
-                    </li>
-                    <li class="pricing-desc">
-                        Lorem ipsum dolor sit amet, illum fastidii dissentias quo ne. Sea ne sint animal iisque, nam an soluta sensibus.
-                    </li>
-                    <li class="pricing-price">
-                        <span>$16</span> / month
-                    </li>
-                    <li>
-                        Dashboards
-                    </li>
-                    <li>
-                        Projects view
-                    </li>
-                    <li>
-                        Contacts
-                    </li>
-                    <li>
-                        Calendar
-                    </li>
-                    <li>
-                        AngularJs
-                    </li>
-                    <li>
-                        <a class="btn btn-primary btn-xs" href="#">Signup</a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="col-lg-4">
-                <ul class="pricing-plan list-unstyled selected">
-                    <li class="pricing-title">
-                        Standard
-                    </li>
-                    <li class="pricing-desc">
-                        Lorem ipsum dolor sit amet, illum fastidii dissentias quo ne. Sea ne sint animal iisque, nam an soluta sensibus.
-                    </li>
-                    <li class="pricing-price">
-                        <span>$22</span> / month
-                    </li>
-                    <li>
-                        Dashboards
-                    </li>
-                    <li>
-                        Projects view
-                    </li>
-                    <li>
-                        Contacts
-                    </li>
-                    <li>
-                        Calendar
-                    </li>
-                    <li>
-                        AngularJs
-                    </li>
-                    <li>
-                        <strong>Support platform</strong>
-                    </li>
-                    <li class="plan-action">
-                        <a class="btn btn-primary btn-xs" href="#">Signup</a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="col-lg-4">
-                <ul class="pricing-plan list-unstyled">
-                    <li class="pricing-title">
-                        Premium
-                    </li>
-                    <li class="pricing-desc">
-                        Lorem ipsum dolor sit amet, illum fastidii dissentias quo ne. Sea ne sint animal iisque, nam an soluta sensibus.
-                    </li>
-                    <li class="pricing-price">
-                        <span>$160</span> / month
-                    </li>
-                    <li>
-                        Dashboards
-                    </li>
-                    <li>
-                        Projects view
-                    </li>
-                    <li>
-                        Contacts
-                    </li>
-                    <li>
-                        Calendar
-                    </li>
-                    <li>
-                        AngularJs
-                    </li>
-                    <li>
-                        <a class="btn btn-primary btn-xs" href="#">Signup</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="row m-t-lg">
-            <div class="col-lg-8 col-lg-offset-2 text-center m-t-lg">
-                <p>*Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. <span class="navy">Various versions</span>  have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
-            </div>
-        </div>
-    </div>
-
-</section>
-
-<section id="contact" class="gray-section contact">
-    <div class="container">
-        <div class="row m-b-lg">
-            <div class="col-lg-12 text-center">
-                <div class="navy-line"></div>
-                <h1>Contact Us</h1>
-                <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.</p>
-            </div>
-        </div>
-        <div class="row m-b-lg">
-            <div class="col-lg-3 col-lg-offset-3">
-                <address>
-                    <strong><span class="navy">Company name, Inc.</span></strong><br/>
-                    795 Folsom Ave, Suite 600<br/>
-                    San Francisco, CA 94107<br/>
-                    <abbr title="Phone">P:</abbr> (123) 456-7890
-                </address>
-            </div>
-            <div class="col-lg-4">
-                <p class="text-color">
-                    Consectetur adipisicing elit. Aut eaque, totam corporis laboriosam veritatis quis ad perspiciatis, totam corporis laboriosam veritatis, consectetur adipisicing elit quos non quis ad perspiciatis, totam corporis ea,
-                </p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <a href="mailto:test@email.com" class="btn btn-primary">Send us mail</a>
-                <p class="m-t-sm">
-                    Or follow us on social platform
-                </p>
-                <ul class="list-inline social-icon">
-                    <li><a href="#"><i class="fa fa-twitter"></i></a>
-                    </li>
-                    <li><a href="#"><i class="fa fa-facebook"></i></a>
-                    </li>
-                    <li><a href="#"><i class="fa fa-linkedin"></i></a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 text-center m-t-lg m-b-lg">
-                <p><strong>&copy; 2015 Company Name</strong><br/> consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
-            </div>
-        </div>
-    </div>
-</section>
+        </div><!--/row-->
+    </div><!--/container-->
+    <!-- End Content Part -->
 @endsection
