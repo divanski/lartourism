@@ -6,3 +6,4 @@
 appache_access.log
 appache_error.log
 *.log
+composer.lock
