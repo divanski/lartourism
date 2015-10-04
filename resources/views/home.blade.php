@@ -1,6 +1,7 @@
-@extends('app2')
+@extends('app')
 
 @section('content')
+@include('elements.slider')
 <div class="container">
 	<div class="row">
 		<div class="col-md-10 col-md-offset-1">

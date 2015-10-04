@@ -1,6 +1,8 @@
-@extends('app2')
+@extends('app')
 
 @section('content')
+
+@include('elements.slider')
 <!--=== Purchase Block ===-->
     <div class="purchase">
         <div class="container">

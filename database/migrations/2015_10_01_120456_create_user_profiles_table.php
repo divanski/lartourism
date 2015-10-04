@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class AddFieldToUserTable extends Migration {
+class CreateUserProfilesTable extends Migration {
 
 	/**
 	 * Run the migrations.
@@ -12,9 +12,14 @@ class AddFieldToUserTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::table('users', function(Blueprint $table)
+		Schema::create('user_profiles', function(Blueprint $table)
 		{
-			$table->string('gender',1);
+			$table->increments('id');
+            $table->integer('user_id')->unsigned();
+            $table->string('first_name', 100);
+            $table->string('middle_name', 100);
+            $table->string('family_name', 100);
+            $table->string('gender',1);
             $table->string('country_of_birth',2);
             $table->string('region_of_birth',50);
             $table->string('municipality_of_birth',50);
@@ -31,6 +36,13 @@ class AddFieldToUserTable extends Migration {
             $table->string('place_of_residence',50);
             $table->string('address_of_residence',150);
             $table->string('personal_phone',50);
+            $table->timestamps();
+
+            $table  ->foreign('user_id')
+                ->references('id')
+                ->on('users')
+                ->onDelete('cascade');
+
 		});
 	}
 
@@ -41,28 +53,7 @@ class AddFieldToUserTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::table('users', function(Blueprint $table)
-		{
-			$table->dropColumn([
-                'gender',
-                'country_of_birth',
-                'region_of_birth',
-                'municipality_of_birth',
-                'place_of_birth',
-                'date_of_birth',
-                'nationality',
-                'personal_no',
-                'identity_card_no',
-                'date_of_issue',
-                'date_of_expiry',
-                'country_of_residence',
-                'region_of_residence',
-                'municipality_of_residennce',
-                'place_of_residence',
-                'address_of_residence',
-                'personal_phone'
-            ]);
-		});
+		Schema::drop('user_profiles');
 	}
 
 }
