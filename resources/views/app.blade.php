@@ -67,9 +67,29 @@
                         {{--</ul>--}}
                     {{--</li>--}}
                     {{--<li class="topbar-devider"></li>--}}
-                    <li><a href="page_faq.html">Help</a></li>
-                    <li class="topbar-devider"></li>
-                    <li><a data-toggle="modal" href="#" data-target="#responsive">Login</a></li>
+
+                    @if(auth()->guest())
+                        @if(!Request::is('auth/login'))
+                            <li><a class="login-link" data-toggle="modal" href="#" data-target="#login">Login</a></li>
+                        @endif
+                        @if(!Request::is('auth/register'))
+                            <li class="topbar-devider"></li>
+                            <li><a class="reg-link" data-toggle="modal" href="#" data-target="#login">Register</a></li>
+                        @endif
+                    @else
+                    <li class="hoverSelector">
+                        <i class="fa fa-user"></i>
+                        <a>{{ auth()->user()->name }}</a>
+                        <ul class="languages hoverSelectorBlock">
+                            <li><a href="{{ url('/auth/logout') }}">Logout</a></li>
+                            {{--<li><a href="#">Spanish</a></li>--}}
+                            {{--<li><a href="#">Russian</a></li>--}}
+                            {{--<li><a href="#">German</a></li>--}}
+                        </ul>
+                    </li>
+                    @endif
+
+
                         {{--<a href="page_login.html">Login</a></li>--}}
                 </ul>
             </div>
@@ -102,41 +122,101 @@
     {{--<li><a data-toggle="modal" href="#" data-target="#responsive">Login</a></li>--}}
     <!-- Bootstrap Modals With Forms -->
     <div class="margin-bottom-40">
-        <div class="modal fade" id="responsive" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
+                <div class="tab-v1">
                     <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title" id="myModalLabel4">Responsive Modal</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <ul class="nav nav-tabs">
+                            <li class="login-form"><a data-toggle="tab" href="#login-form">Login</a></li>
+                            <li class="register-form"><a data-toggle="tab" href="#register-form">or Register</a></li>
+                        </ul>
                     </div>
-                    <div class="modal-body">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <h4>Some Input</h4>
-                                <p><input class="form-control" type="text" /></p>
-                                <p><input class="form-control" type="text" /></p>
-                                <p><input class="form-control" type="text" /></p>
-                                <p><input class="form-control" type="text" /></p>
-                                <p><input class="form-control" type="text" /></p>
-                                <p><input class="form-control" type="text" /></p>
-                                <p><input class="form-control" type="text" /></p>
-                            </div>
-                            <div class="col-md-6">
-                                <h4>Some More Input</h4>
-                                <p><input class="form-control" type="text" /></p>
-                                <p><input class="form-control" type="text" /></p>
-                                <p><input class="form-control" type="text" /></p>
-                                <p><input class="form-control" type="text" /></p>
-                                <p><input class="form-control" type="text" /></p>
-                                <p><input class="form-control" type="text" /></p>
-                                <p><input class="form-control" type="text" /></p>
-                            </div>
+
+                    <div class="tab-content">
+                        <div id="login-form" class="login-form tab-pane fade in">
+                            <form class="form-horizontal" role="form" method="POST" action="{{ url('/auth/login') }}">
+                                <input type="hidden" name="_token" value="{{ csrf_token() }}">
+
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label">E-Mail Address</label>
+                                    <div class="col-md-6">
+                                        <input type="email" class="form-control" name="email" value="{{ old('email') }}">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label">Password</label>
+                                    <div class="col-md-6">
+                                        <input type="password" class="form-control" name="password">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="col-md-6 col-md-offset-4">
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox" name="remember"> Remember Me
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="col-md-6 col-md-offset-4">
+                                        <button type="submit" class="btn-u btn-primary">Login</button>
+
+                                        <a class="btn btn-link" href="{{ url('/password/email') }}">Forgot Your Password?</a>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div id="register-form" class="register-form tab-pane fade in">
+                            <form class="form-horizontal" role="form" method="POST" action="{{ url('/auth/register') }}">
+                                <input type="hidden" name="_token" value="{{ csrf_token() }}">
+
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label">Name</label>
+                                    <div class="col-md-6">
+                                        <input type="text" class="form-control" name="name" value="{{ old('name') }}">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label">E-Mail Address</label>
+                                    <div class="col-md-6">
+                                        <input type="email" class="form-control" name="email" value="{{ old('email') }}">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label">Password</label>
+                                    <div class="col-md-6">
+                                        <input type="password" class="form-control" name="password">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label">Confirm Password</label>
+                                    <div class="col-md-6">
+                                        <input type="password" class="form-control" name="password_confirmation">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="col-md-6 col-md-offset-4">
+                                        <button type="submit" class="btn-u btn-primary">
+                                            Register
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
                     </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn-u btn-u-default" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn-u btn-u-primary">Save changes</button>
-                    </div>
+                </div>
+
+
                 </div>
             </div>
         </div>
@@ -288,6 +368,16 @@
             $('#myModal').on('shown.bs.modal', function () {
                 $('#myInput').focus()
             })
+
+            $('.login-link').click(function(){
+                $('.register-form').removeClass("active");
+                $('.login-form').addClass("active");
+            });
+
+            $('.reg-link').click(function(){
+                $('.login-form').removeClass("active");
+                $('.register-form').addClass("active");
+            });
         });
     </script>
     <!--[if lt IE 9]>

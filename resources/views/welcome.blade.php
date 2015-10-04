@@ -1,7 +1,6 @@
 @extends('app')
 
 @section('content')
-
 @include('elements.slider')
 <!--=== Purchase Block ===-->
     <div class="purchase">
@@ -27,7 +26,7 @@
                 <div class="headline"><h2>Welcome To Unify</h2></div>
                 <div class="row">
                     <div class="col-sm-4">
-                        <img class="img-responsive margin-bottom-20" src="assets/img/main/img6.jpg" alt="" />
+                        <img class="img-responsive margin-bottom-20" src="{{url('assets/img/main/img6.jpg')}}" alt="" />
                     </div>
                     <div class="col-sm-8">
                         <p>Unify is an incredibly beautiful responsive Bootstrap Template for corporate and creative professionals. It works on all major web browsers, tablets and phone.</p>
@@ -61,7 +60,7 @@
                         <div class="item">
                             <a href="#">
                                 <em class="overflow-hidden">
-                                    <img class="img-responsive" src="assets/img/main/img1.jpg" alt="">
+                                    <img class="img-responsive" src="{{url('assets/img/main/img1.jpg')}}" alt="">
                                 </em>
                                 <span>
                                     <strong>Happy New Year</strong>
@@ -72,7 +71,7 @@
                         <div class="item">
                             <a href="#">
                                 <em class="overflow-hidden">
-                                    <img class="img-responsive" src="assets/img/main/img2.jpg" alt="">
+                                    <img class="img-responsive" src="{{url('assets/img/main/img2.jpg')}}" alt="">
                                 </em>
                                 <span>
                                     <strong>Award Winning Agency</strong>
@@ -83,7 +82,7 @@
                         <div class="item">
                             <a href="#">
                                 <em class="overflow-hidden">
-                                    <img class="img-responsive" src="assets/img/main/img3.jpg" alt="">
+                                    <img class="img-responsive" src="{{url('assets/img/main/img3.jpg')}}" alt="">
                                 </em>
                                 <span>
                                     <strong>Wolf Moon Officia</strong>
@@ -94,7 +93,7 @@
                         <div class="item">
                             <a href="#">
                                 <em class="overflow-hidden">
-                                    <img class="img-responsive" src="assets/img/main/img4.jpg" alt="">
+                                    <img class="img-responsive" src="{{url('assets/img/main/img4.jpg')}}" alt="">
                                 </em>
                                 <span>
                                     <strong>Food Truck Quinoa Nesciunt</strong>
@@ -105,7 +104,7 @@
                         <div class="item">
                             <a href="#">
                                 <em class="overflow-hidden">
-                                    <img class="img-responsive" src="assets/img/main/img5.jpg" alt="">
+                                    <img class="img-responsive" src="{{url('assets/img/main/img5.jpg')}}" alt="">
                                 </em>
                                 <span>
                                     <strong>Happy New Year</strong>
@@ -116,7 +115,7 @@
                         <div class="item">
                             <a href="#">
                                 <em class="overflow-hidden">
-                                    <img class="img-responsive" src="assets/img/main/img1.jpg" alt="">
+                                    <img class="img-responsive" src="{{url('assets/img/main/img1.jpg')}}" alt="">
                                 </em>
                                 <span>
                                     <strong>Happy New Year</strong>
@@ -127,7 +126,7 @@
                         <div class="item">
                             <a href="#">
                                 <em class="overflow-hidden">
-                                    <img class="img-responsive" src="assets/img/main/img2.jpg" alt="">
+                                    <img class="img-responsive" src="{{url('assets/img/main/img2.jpg')}}" alt="">
                                 </em>
                                 <span>
                                     <strong>Award Winning Agency</strong>
@@ -138,7 +137,7 @@
                         <div class="item">
                             <a href="#">
                                 <em class="overflow-hidden">
-                                    <img class="img-responsive" src="assets/img/main/img3.jpg" alt="">
+                                    <img class="img-responsive" src="{{url('assets/img/main/img3.jpg')}}" alt="">
                                 </em>
                                 <span>
                                     <strong>Wolf Moon Officia</strong>
@@ -149,7 +148,7 @@
                         <div class="item">
                             <a href="#">
                                 <em class="overflow-hidden">
-                                    <img class="img-responsive" src="assets/img/main/img4.jpg" alt="">
+                                    <img class="img-responsive" src="{{url('assets/img/main/img4.jpg')}}" alt="">
                                 </em>
                                 <span>
                                     <strong>Food Truck Quinoa Nesciunt</strong>
@@ -160,7 +159,7 @@
                         <div class="item">
                             <a href="#">
                                 <em class="overflow-hidden">
-                                    <img class="img-responsive" src="assets/img/main/img5.jpg" alt="">
+                                    <img class="img-responsive" src="{{url('assets/img/main/img5.jpg')}}" alt="">
                                 </em>
                                 <span>
                                     <strong>Happy New Year</strong>
@@ -192,7 +191,7 @@
                         <div id="home" class="tab-pane fade in active">
                             <div class="row">
                                 <div class="col-md-4">
-                                    <img src="assets/img/main/img12.jpg" class="img-responsive img-tab-space" alt="">
+                                    <img src="{{url('assets/img/main/img12.jpg')}}" class="img-responsive img-tab-space" alt="">
                                 </div>
                                 <div class="col-md-8">
                                     <h4>Heading Sample 1</h4>
@@ -201,17 +200,17 @@
                             </div>
                         </div>
                         <div id="profile" class="tab-pane fade in">
-                            <img src="assets/img/main/img5.jpg" class="pull-left lft-img-margin img-width-200" alt="">
+                            <img src="{{url('assets/img/main/img5.jpg')}}" class="pull-left lft-img-margin img-width-200" alt="">
                             <h4>Heading Sample 2</h4>
                             <p>Vivamus imperdiet condimentum diam, eget placerat felis consectetur id. Donec eget orci metus, ac adipiscing nunc. Pellentesque fermentum, ante ac interdum ullamcorper. Donec eget orci metus, <strong>ac adipiscing nunc.</strong> Vivamus imperdiet condimentum diam, eget placerat felis consectetur id. Donec eget orci metus, ac adipiscing nunc. Pellentesque fermentum, ante ac interdum id. Donec eget orci metus, ac adipiscing nunc. Pellentesque fermentum, ante ac interdum ullamcorper. Donec eget orci metus, ac adipiscing nunc. Pellentesque fermentum, ante ac <strong>interdum ullamcorper.</strong></p>
                         </div>
                         <div id="messages" class="tab-pane fade in">
                             <h4>Heading Sample 3</h4>
-                            <p><img src="assets/img/main/img6.jpg" class="pull-right rgt-img-margin img-width-200" alt=""> <strong>Vivamus imperdiet condimentum diam, eget placerat felis consectetur id.</strong> Donec eget orci metus, Vivamus imperdiet condimentum diam, eget placerat felis consectetur id. Donec eget orci metus, ac adipiscing nunc. Pellentesque fermentum, ante ac interdum ullamcorper. Donec eget orci metus, ac adipiscing nunc. Pellentesque fermentum, consectetur id. Donec eget orci metus, ac adipiscing nunc. <strong>Pellentesque fermentum</strong>, ante ac interdum ullamcorper. Donec eget orci metus, ac adipiscing nunc. Pellentesque fermentum, ante ac interdum ullamcorper.</p>
+                            <p><img src="{{url('assets/img/main/img6.jpg')}}" class="pull-right rgt-img-margin img-width-200" alt=""> <strong>Vivamus imperdiet condimentum diam, eget placerat felis consectetur id.</strong> Donec eget orci metus, Vivamus imperdiet condimentum diam, eget placerat felis consectetur id. Donec eget orci metus, ac adipiscing nunc. Pellentesque fermentum, ante ac interdum ullamcorper. Donec eget orci metus, ac adipiscing nunc. Pellentesque fermentum, consectetur id. Donec eget orci metus, ac adipiscing nunc. <strong>Pellentesque fermentum</strong>, ante ac interdum ullamcorper. Donec eget orci metus, ac adipiscing nunc. Pellentesque fermentum, ante ac interdum ullamcorper.</p>
                         </div>
                         <div id="settings" class="tab-pane fade in">
                             <h4>Heading Sample 4</h4>
-                            <p><img src="assets/img/main/img1.jpg" class="pull-right rgt-img-margin img-width-200" alt=""> Vivamus imperdiet condimentum diam, eget placerat felis consectetur id. Donec eget orci metus, Vivamus imperdiet condimentum diam, eget placerat felis consectetur id. Donec eget orci metus, ac adipiscing nunc. Pellentesque fermentum, ante ac interdum ullamcorper. Donec eget orci metus, ac adipiscing nunc. Pellentesque fermentum, consectetur id. Donec eget orci metus, ac adipiscing nunc. <strong>Pellentesque fermentum</strong>, ante ac interdum ullamcorper. Donec eget orci metus, ac adipiscing nunc. Pellentesque fermentum, ante ac interdum ullamcorper.</p>
+                            <p><img src="{{url('assets/img/main/img1.jpg')}}" class="pull-right rgt-img-margin img-width-200" alt=""> Vivamus imperdiet condimentum diam, eget placerat felis consectetur id. Donec eget orci metus, Vivamus imperdiet condimentum diam, eget placerat felis consectetur id. Donec eget orci metus, ac adipiscing nunc. Pellentesque fermentum, ante ac interdum ullamcorper. Donec eget orci metus, ac adipiscing nunc. Pellentesque fermentum, consectetur id. Donec eget orci metus, ac adipiscing nunc. <strong>Pellentesque fermentum</strong>, ante ac interdum ullamcorper. Donec eget orci metus, ac adipiscing nunc. Pellentesque fermentum, ante ac interdum ullamcorper.</p>
                         </div>
                     </div>
                 </div><!--/tab-v1-->
@@ -222,14 +221,14 @@
                 <!-- Photo Stream -->
                 <div class="headline"><h3>Photo Stream</h3></div>
                 <ul class="list-unstyled blog-photos margin-bottom-30">
-                    <li><a href="#"><img src="assets/img/sliders/elastislide/5.jpg" alt="" class="hover-effect"></a></li>
-                    <li><a href="#"><img src="assets/img/sliders/elastislide/6.jpg" alt="" class="hover-effect"></a></li>
-                    <li><a href="#"><img src="assets/img/sliders/elastislide/8.jpg" alt="" class="hover-effect"></a></li>
-                    <li><a href="#"><img src="assets/img/sliders/elastislide/10.jpg" alt="" class="hover-effect"></a></li>
-                    <li><a href="#"><img src="assets/img/sliders/elastislide/11.jpg" alt="" class="hover-effect"></a></li>
-                    <li><a href="#"><img src="assets/img/sliders/elastislide/1.jpg" alt="" class="hover-effect"></a></li>
-                    <li><a href="#"><img src="assets/img/sliders/elastislide/2.jpg" alt="" class="hover-effect"></a></li>
-                    <li><a href="#"><img src="assets/img/sliders/elastislide/7.jpg" alt="" class="hover-effect"></a></li>
+                    <li><a href="#"><img src="{{url('assets/img/sliders/elastislide/5.jpg')}}" alt="" class="hover-effect"></a></li>
+                    <li><a href="#"><img src="{{url('assets/img/sliders/elastislide/6.jpg')}}" alt="" class="hover-effect"></a></li>
+                    <li><a href="#"><img src="{{url('assets/img/sliders/elastislide/8.jpg')}}" alt="" class="hover-effect"></a></li>
+                    <li><a href="#"><img src="{{url('assets/img/sliders/elastislide/10.jpg')}}" alt="" class="hover-effect"></a></li>
+                    <li><a href="#"><img src="{{url('assets/img/sliders/elastislide/11.jpg')}}" alt="" class="hover-effect"></a></li>
+                    <li><a href="#"><img src="{{url('assets/img/sliders/elastislide/1.jpg')}}" alt="" class="hover-effect"></a></li>
+                    <li><a href="#"><img src="{{url('assets/img/sliders/elastislide/2.jpg')}}" alt="" class="hover-effect"></a></li>
+                    <li><a href="#"><img src="{{url('assets/img/sliders/elastislide/7.jpg')}}" alt="" class="hover-effect"></a></li>
                 </ul><!--/blog-photos-->
                 <!-- End Photo Stream -->
 
