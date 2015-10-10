@@ -20,4 +20,12 @@ Route::controllers([
 	'password' => 'Auth\PasswordController',
 ]);
 
-Route::get('profile', 'UserProfileController@index');
+//Route::get('dashboard', 'UserProfileController@index');
+//Route::get('dashboard/{id}', 'UserProfileController@show');
+
+Route::get('profile', [
+    'middleware' => 'auth',
+    'uses' => 'UserProfileController@index'
+]);
+
+Route::get('user/{id}', 'UserController@show');

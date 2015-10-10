@@ -1,8 +1,8 @@
-<?php 
-namespace App\Http\Controllers;
+<?php namespace App\Http\Controllers;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use App\User;
 use App\UserProfile;
 use Illuminate\Http\Request;
 
@@ -13,9 +13,16 @@ class UserProfileController extends Controller
      *
      * @return Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        $profile = UserProfile::all();
+        $user = $request->user()->toArray();
+        $profile = UserProfile::find($user['id']);
+
+        if (!$profile) {
+            return view('profile.create', compact('user'));
+        }
+
+//        dd($user['id']);
         return view('profile.index', compact('profile'));
     }
 
@@ -47,7 +54,9 @@ class UserProfileController extends Controller
      */
     public function show($id)
     {
-        //
+        $userprofile = User::find($id);
+
+        return view('profile.index', compact('userprofile'));
     }
 
     /**
