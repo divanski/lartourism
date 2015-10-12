@@ -349,6 +349,7 @@
     <script type="text/javascript" src="{{ asset('assets/plugins/jquery/jquery.min.js')}}"></script>
     <script type="text/javascript" src="{{ asset('assets/plugins/jquery/jquery-migrate.min.js')}}"></script>
     <script type="text/javascript" src="{{ asset('assets/plugins/bootstrap/js/bootstrap.min.js')}}"></script>
+
     <!-- JS Implementing Plugins -->
     <script type="text/javascript" src="{{ asset('assets/plugins/back-to-top.js')}}"></script>
     <script type="text/javascript" src="{{ asset('assets/plugins/smoothScroll.js')}}"></script>
@@ -361,6 +362,9 @@
     <!-- JS Page Level -->
     <script type="text/javascript" src="{{ asset('assets/js/app.js')}}"></script>
     <script type="text/javascript" src="{{ asset('assets/js/plugins/owl-recent-works.js')}}"></script>
+
+    @yield('script-bottom')
+    
     <script type="text/javascript">
         jQuery(document).ready(function() {
             App.init();
