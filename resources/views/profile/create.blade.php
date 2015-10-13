@@ -414,7 +414,7 @@
 @endsection
 
 @section('script')
-    @parent
+    
     <script type="text/javascript" src="{{ URL::asset('assets/plugins/counter/waypoints.min.js') }}"></script>
     <script type="text/javascript" src="{{ URL::asset('assets/plugins/counter/jquery.counterup.min.js') }}"></script>
     <script type="text/javascript" src="{{ URL::asset('assets/plugins/sky-forms-pro/skyforms/js/jquery.maskedinput.min.js') }}"></script>
@@ -426,13 +426,13 @@
 @endsection
 @section('script-bottom')
     <script type="text/javascript" src="{{ URL::asset('assets/js/plugins/masking.js') }}"></script>
-    <script type="text/javascript" src="{{ URL::asset('/assets/js/plugins/datepicker.js') }}"></script>
+    <script type="text/javascript" src="{{ URL::asset('assets/js/plugins/datepicker.js') }}"></script>
     <script type="text/javascript" src="{{ URL::asset('assets/js/plugins/validation.js') }}"></script>
     <script type="text/javascript">
         jQuery(document).ready(function() {
             App.init();
-            // App.initCounter();
-            // App.initScrollBar();
+            App.initCounter();
+            App.initScrollBar();
             Masking.initMasking();
             Datepicker.initDatepicker();
             Validation.initValidation();

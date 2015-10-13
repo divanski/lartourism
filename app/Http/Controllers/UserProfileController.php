@@ -1,10 +1,11 @@
 <?php namespace App\Http\Controllers;
 
-use App\Http\Requests;
-use App\Http\Controllers\Controller;
 use App\User;
+use App\Country;
 use App\UserProfile;
+use App\Http\Requests;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 
 class UserProfileController extends Controller
 {
@@ -19,6 +20,8 @@ class UserProfileController extends Controller
         $profile = UserProfile::find($user['id']);
 
         if (!$profile) {
+            // $countries = Country::all();
+            // var_dump($countries);
             return view('profile.create', compact('user'));
         }
 
