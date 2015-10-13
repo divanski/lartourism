@@ -2,7 +2,7 @@
 /node_modules
 .env
 /.idea
-/error
+# error/*
 appache_access.log
 appache_error.log
 *.log
