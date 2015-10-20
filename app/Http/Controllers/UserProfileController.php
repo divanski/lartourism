@@ -20,12 +20,10 @@ class UserProfileController extends Controller
         $profile = UserProfile::find($user['id']);
 
         if (!$profile) {
-            // $countries = Country::all();
-            // var_dump($countries);
-            return view('profile.create', compact('user'));
+            $countries = Country::all();
+            return view('profile.create', compact('user', 'countries'));
         }
 
-//        dd($user['id']);
         return view('profile.index', compact('profile'));
     }
 
@@ -46,7 +44,7 @@ class UserProfileController extends Controller
      */
     public function store()
     {
-        //
+        // Auth::user()->profile()->save()
     }
 
     /**
@@ -59,7 +57,7 @@ class UserProfileController extends Controller
     {
         $userprofile = User::find($id);
 
-        return view('profile.index', compact('userprofile'));
+        return view('profile.show', compact('userprofile'));
     }
 
     /**
